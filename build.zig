@@ -35,7 +35,7 @@ pub fn build(b: *std.Build) !void {
   }
 
   lib.addIncludePath(b.path("lib/include"));
-  lib.addIncludePath(b.path("lib/src"));
+  lib.addIncludePath(b.path("deletelib/src"));
   lib.addIncludePath(b.path("lib/src/wasm"));
 
   lib.root_module.addCMacro("_POSIX_C_SOURCE", "200112L");
